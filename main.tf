@@ -11,7 +11,7 @@ resource "aws_instance" "yashaswini_instance" {
     security_groups = ["${aws_security_group.jenkins_sg.name}"]
    
    provisioner "file" {
-    source      = "C:/Users/yashass/Documents/Terraform_Setup/jenkins.sh"
+    source      = "C:/Users/yashass/Documents/Terraform_Setup_Jenkins/jenkins.sh"
     destination = "/tmp/jenkins.sh"
   }
 
